@@ -1,0 +1,36 @@
+jQuery is a JavaScript Library.
+jQuery features: HTML/DOM manipulation, CSS manipulation, HTML event methods, Effects and animations, AJAX, Utilities
+    In addition, jQuery has plugins for almost any task out there.
+
+Selectors: $("selector")
+
+Events:
+    1. Mouse - click, dblclick,mouseenter, mouseleave
+    2. keyboard - keypress, keydown, keyup
+    3. form - submit, change, focus, blur
+    4. doc/window - load, unload, resize, scroll
+
+Effects: 
+    1. show/hide - show, hide, toggle. $(selector).hide(speed,callback); speed can be in ms, "slow", "fast"
+    2. fade - fadeIn, fadeOut, fadeToggle, fadeTo. $(selector).fadeIn(speed,callback);  $(selector).fadeTo(speed,opacity,callback);
+    3. slide - slideDown, slideUp, slideToggle/ $(selector).slideToggle(speed,callback);
+    4. animate - $(selector).animate({params},speed,callback);
+        A callback function is executed after the current effect is 100% finished.
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000); chaining
+
+HTML:
+    1. get/set - text, html, val, attr
+    2. add - append, prepend, after, before - https://stackoverflow.com/questions/14846506/append-prepend-after-and-before
+    3. remove - remove, empty
+    4. css - addClass, removeClass, toggleClass, css. addClass("class1 class2") toggleClass("class1") css("propertyname","value") css({"propertyname":"value",...})
+    5. dimensions - width, height, innerWidth, innerHeight, outerWidth, outerHeight. inner(includes padding) outer(includes padding and border), get & set both
+
+Traversing:
+    1. parent(ancentors) - parent(direct), parents(all), parentsUntil(other than listed ele). parents("tag-specific too")(for that specific parent only)
+    2. child(descendants) - children(direct), find(specific). child(tag.class), find("*")
+    3. sibling(sideway) - siblings, next, nextAll, nextUntil, prev, prevAll, prevUntil
+    4. filtering - first, last, eq, filter, not
+
+Extras:
+    1. var jq = $.noConflict(); $.noConflict();(have to use jQuery)
+        created bcz if some other js framework might be working with $, so this is just to replace $ to any var/jQuery
