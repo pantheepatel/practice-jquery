@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="jq_network.js"></script>
 </head>
+
 <body>
     <h2>jQuery AJAX Networking</h2>
 
@@ -18,8 +20,12 @@
     <button id="btn-submit">Serialize & Submit</button>
 
     <form id="userForm">
-        <input type="text" name="username" placeholder="Enter Name">
-        <input type="number" name="age" placeholder="Enter Age">
+        <input type="text" name="username" placeholder="Enter Name" contenteditable id="fname" required>
+        <input type="number" name="age" placeholder="Enter Age" id="age">
+        <input type="checkbox" name="1" id="1">
+        <input type="checkbox" name="1" id="2">
+        <input type="radio" name="2" id="3">
+        <input type="radio" name="2" id="4">
     </form>
 
     <h3>Response:</h3>
@@ -28,4 +34,5 @@
     <h3>Loaded Content:</h3>
     <div id="content"></div>
 </body>
+
 </html>

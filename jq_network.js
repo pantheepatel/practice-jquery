@@ -63,4 +63,48 @@ $(document).ready(function () {
             alert("Form submission failed.");
         });
     });
+
+    // localStorage.setItem("username", "panthee patel");
+
+    // css and selection
+    $("input[name='username']").val("enter username");
+    $("input[name='username']").focus();
+    $("input[type='checkbox']#1").prop("checked", true);
+    $("input[type='checkbox']#2").prop("disabled", true);
+    $("#fname").focus(function () {
+        $(this).css("border", "2px solid blue");
+    });
+
+    $("#age").blur(function () {
+        $(this).css("border", "1px solid pink");
+    });
+
+
+    // validations
+    $("#myForm").submit(function (e) {
+        e.preventDefault();
+
+        let email = $("#email").val();
+        if (!email) {
+            alert("Email is required");
+        }
+        else if (!validateEmail(email)) {
+            alert("Invalid email format");
+        }
+        else {
+            console.log("Form submitted");
+        }
+    });
+
+    function validateEmail(email) {
+        let re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return re.test(email);
+    }
+    $("input:required").each(function () {
+        if (!$(this).val()) {
+            $(this).next("span").text("This field is required.");
+        }
+    });
+
+
 });
