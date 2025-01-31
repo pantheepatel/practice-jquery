@@ -102,6 +102,7 @@ $(document).ready(function () {
     // $("#check1").parentsUntil(".div").css({ "border": "4px solid pink" })
     // $("div").children("div#check1").css({ "border": "4px solid pink" })
     // $("div").find("*").css({ "border": "4px solid pink" })
+    // $("div:first-child").css({ "background-color": "green" })
 
 });
 

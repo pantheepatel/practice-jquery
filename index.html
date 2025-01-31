@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Networking</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jq_network.js"></script>
+</head>
+<body>
+    <h2>jQuery AJAX Networking</h2>
+
+    <button id="btn-ajax">$.ajax()</button>
+    <button id="btn-get">$.get()</button>
+    <button id="btn-post">$.post()</button>
+    <button id="btn-load">.load()</button>
+    <button id="btn-json">$.getJSON()</button>
+    <button id="btn-submit">Serialize & Submit</button>
+
+    <form id="userForm">
+        <input type="text" name="username" placeholder="Enter Name">
+        <input type="number" name="age" placeholder="Enter Age">
+    </form>
+
+    <h3>Response:</h3>
+    <pre id="response"></pre>
+
+    <h3>Loaded Content:</h3>
+    <div id="content"></div>
+</body>
+</html>
